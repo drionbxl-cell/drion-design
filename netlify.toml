@@ -1,0 +1,54 @@
+[build]
+  publish = "."
+
+# ---------------------------------------------------------------
+# Cache long sur les assets : ils sont immuables (le nom du fichier
+# change quand le contenu change). Un visiteur qui revient ne
+# retelecharge rien.
+# ---------------------------------------------------------------
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# La video est lourde : meme traitement.
+[[headers]]
+  for = "/assets/video/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# ---------------------------------------------------------------
+# Le HTML ne doit PAS etre mis en cache longtemps, sinon tes mises
+# a jour n'arrivent jamais chez les visiteurs deja passes.
+# ---------------------------------------------------------------
+[[headers]]
+  for = "/"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# CSS et JS a la racine : pas de hash dans le nom, donc pas de cache long.
+[[headers]]
+  for = "/style.css"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/script.js"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+# ---------------------------------------------------------------
+# Securite
+# ---------------------------------------------------------------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"

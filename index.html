@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drion — Design graphique</title>
+<meta name="description" content="Portfolio de design graphique de Drion — identités visuelles, affiches, éditions, branding et illustration.">
+
+<link rel="icon" type="image/png" sizes="512x512" href="assets/meta/favicon-512.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/meta/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/meta/favicon-16.png">
+<link rel="apple-touch-icon" href="assets/meta/apple-touch-icon.png">
+
+<link rel="canonical" href="https://drion-design.netlify.app/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Drion">
+<meta property="og:locale" content="fr_BE">
+<meta property="og:url" content="https://drion-design.netlify.app/">
+<meta property="og:title" content="Drion — Design graphique">
+<meta property="og:description" content="Identités visuelles, affiches, éditions, branding et illustration.">
+<meta property="og:image" content="https://drion-design.netlify.app/assets/meta/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Drion — Design graphique">
+<meta name="twitter:description" content="Identités visuelles, affiches, éditions, branding et illustration.">
+<meta name="twitter:image" content="https://drion-design.netlify.app/assets/meta/og-image.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500;700;900&amp;family=Literata:ital,opsz,wght@0,18..144,400;0,18..144,500;1,18..144,400&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<noscript><style>.reveal{opacity:1 !important; transform:none !important;} .filmstrip{display:none;}</style></noscript>
+</head>
+<body>
+
+<div class="cmyk-strip" aria-hidden="true">
+  <span class="c"></span><span class="m"></span><span class="y"></span><span class="k"></span>
+  <div class="progress" id="scrollProgress"></div>
+</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <img src="assets/brand/logo.png" alt="" class="brand-mark">
+      DRION
+    </a>
+    <nav class="catlinks" id="catlinks">
+      <a href="#logos" data-accent="--accent-logos"><span class="dot"></span>Logos</a>
+      <a href="#affiches" data-accent="--accent-affiches"><span class="dot"></span>Affiches</a>
+      <a href="#editions" data-accent="--accent-editions"><span class="dot"></span>Éditions</a>
+      <a href="#volume-branding" data-accent="--accent-vb"><span class="dot"></span>Volume &amp; Branding</a>
+      <a href="#artwork" data-accent="--accent-artwork"><span class="dot"></span>Artwork</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <!-- Pas d'attribut autoplay : la lecture est declenchee par script.js
+         apres le chargement de la page, et seulement si l'utilisateur
+         n'a pas demande la reduction des animations. -->
+    <video class="hero-bg-video" id="heroVideo"
+           muted loop playsinline
+           preload="none"
+           poster="assets/video/bg-loop-poster.webp"
+           data-src="assets/video/bg-loop.mp4"
+           aria-hidden="true"></video>
+    <div class="wrap">
+      <p class="eyebrow"><span class="rule"></span>Book — design graphique</p>
+      <h1 class="hero-title">DRION</h1>
+      <p class="hero-sub">Étudiant à Bruxelles, passionné de design graphique depuis plusieurs années — logos, affiches, mises en page et illustration. Une sélection de projets récents.</p>
+
+      <div class="hero-meta">
+        <div><b>Champs</b><span>Identité · Édition · Affiche · Illustration</span></div>
+        <div><b>Formation</b><span>CQ Infographie</span></div>
+        <div><b>Disponibilité</b><span>Job étudiant · Freelance</span></div>
+        <div><b>Base</b><span>Bruxelles, Belgique</span></div>
+      </div>
+    </div>
+
+    <div class="filmstrip" aria-hidden="true">
+      <div class="filmstrip-track" id="filmstripTrack"></div>
+    </div>
+  </section>
+
+  <section class="category" id="logos" data-accent="--accent-logos">
+    <div class="wrap">
+      <div class="cat-head reveal">
+        <div>
+          <p class="eyebrow"><span class="rule"></span>LG — Identités</p>
+          <h2>Logos</h2>
+        </div>
+        <span class="cat-tag">9 pièces</span>
+      </div>
+      <p class="cat-desc reveal">9 identités visuelles — d'une mascotte de rue à une marque institutionnelle.</p>
+      <div class="grid g-logos">
+        <figure class="card reveal" tabindex="0" role="button" data-cat="logos" data-src="assets/logos/logos-01.jpg" data-tag="LG · 01">
+          <img src="assets/logos/logos-01.jpg" alt="Monogramme circulaire tracé au trait fin, sur fond clair — identité EXAG Records" loading="lazy">
+          <span class="tag">LG · 01</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+        <figure class="card reveal" tabindex="0" role="button" data-cat="logos" data-src="assets/logos/logos-02.webp" data-tag="LG · 02">
+          <img src="assets/logos/logos-02.webp" alt="Logo noir et rouge sur fond clair, lettrage géométrique compact" loading="lazy">
+          <span class="tag">LG · 02</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+        <figure class="card reveal" tabindex="0" role="button" data-cat="logos" data-src="assets/logos/logos-03.jpg" data-tag="LG · 03">
+          <img src="assets/logos/logos-03.jpg" alt="Logotype blanc et magenta sur fond noir, contraste fort" loading="lazy">
+          <span class="tag">LG · 03</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+        <figure class="card reveal" tabindex="0" role="button" data-cat="logos" data-src="assets/logos/logos-04.jpg" data-tag="LG · 04">
+          <img src="assets/logos/logos-04.jpg" alt="Marque orange sur fond gris foncé, forme pleine et lettrage bâton" loading="lazy">
+          <span class="tag">LG · 04</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+        <figure class="card reveal" tabindex="0" role="button" data-cat="logos" data-src="assets/logos/logos-05.jpg" data-tag="LG · 05">
+          <img src="assets/logos/logos-05.jpg" alt="Logo cyan et blanc sur fond noir, construction symétrique" loading="lazy">
+          <span class="tag">LG · 05</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+        <figure class="card reveal" tabindex="0" role="button" data-cat="logos" data-src="assets/logos/logos-06.webp" data-tag="LG · 06">
+          <img src="assets/logos/logos-06.webp" alt="Identité au trait sur fond blanc, composition centrée et aérée" loading="lazy">
+          <span class="tag">LG · 06</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+        <figure class="card reveal" tabindex="0" role="button" data-cat="logos" data-src="assets/logos/logos-07.jpg" data-tag="LG · 07">
+          <img src="assets/logos/logos-07.jpg" alt="Logotype sur fond blanc, dessin linéaire épuré" loading="lazy">
+          <span class="tag">LG · 07</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+        <figure class="card reveal" tabindex="0" role="button" data-cat="logos" data-src="assets/logos/logos-08.jpg" data-tag="LG · 08">
+          <img src="assets/logos/logos-08.jpg" alt="Marque blanche sur fond noir, silhouette simplifiée en aplat" loading="lazy">
+          <span class="tag">LG · 08</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+        <figure class="card reveal" tabindex="0" role="button" data-cat="logos" data-src="assets/logos/logos-09.webp" data-tag="LG · 09">
+          <img src="assets/logos/logos-09.webp" alt="Identité institutionnelle sur fond blanc, lettrage et symbole alignés" loading="lazy">
+          <span class="tag">LG · 09</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+      </div>
+      <p class="legal">EXAG Records, Pictionary, Galler et Pôle Parvis : exercices scolaires de recréation d'identité, non commandés et non officiels. Logos et identités entièrement conçus par moi — certains fonds de présentation ont été générés avec assistance IA.</p>
+    </div>
+  </section>
+
+  <section class="category" id="affiches" data-accent="--accent-affiches">
+    <div class="wrap">
+      <div class="cat-head reveal">
+        <div>
+          <p class="eyebrow"><span class="rule"></span>AF — Affiches</p>
+          <h2>Affiches</h2>
+        </div>
+        <span class="cat-tag">5 pièces</span>
+      </div>
+      <p class="cat-desc reveal">5 affiches — engagement, automobile, événementiel.</p>
+      <div class="grid g-affiches">
+        <figure class="card reveal" tabindex="0" role="button" data-cat="affiches" data-src="assets/affiches/affiches-01.jpg" data-tag="AF · 01">
+          <img src="assets/affiches/affiches-01.jpg" alt="Affiche fond noir et bleu nuit, titrage vertical et visuel central en clair-obscur" loading="lazy">
+          <span class="tag">AF · 01</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+        <figure class="card reveal" tabindex="0" role="button" data-cat="affiches" data-src="assets/affiches/affiches-02.jpg" data-tag="AF · 02 — Concept non officiel">
+          <img src="assets/affiches/affiches-02.jpg" alt="Affiche concept bleu nuit — projet fictif, non officiel" loading="lazy">
+          <span class="tag">AF · 02</span>
+          <span class="warn-badge">CONCEPT · NON OFFICIEL</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+        <figure class="card reveal" tabindex="0" role="button" data-cat="affiches" data-src="assets/affiches/affiches-03.jpg" data-tag="AF · 03">
+          <img src="assets/affiches/affiches-03.jpg" alt="Affiche fond blanc à dominante bleue, large aplat et typographie en gros corps" loading="lazy">
+          <span class="tag">AF · 03</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+        <figure class="card reveal" tabindex="0" role="button" data-cat="affiches" data-src="assets/affiches/affiches-04.jpg" data-tag="AF · 04">
+          <img src="assets/affiches/affiches-04.jpg" alt="Affiche polychrome cyan, orange et vert — composition contrastée saturée" loading="lazy">
+          <span class="tag">AF · 04</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+        <figure class="card reveal" tabindex="0" role="button" data-cat="affiches" data-src="assets/affiches/affiches-05.jpg" data-tag="AF · 05">
+          <img src="assets/affiches/affiches-05.jpg" alt="Affiche automobile sur fond noir, sujet détaché en lumière rasante" loading="lazy">
+          <span class="tag">AF · 05</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+      </div>
+      <p class="legal">Mercedes-Benz, BMW, Chevrolet Camaro et Biocoop : exercices de style réalisés à titre personnel ou scolaire. Non affiliés aux marques ou artistes cités, non commandés, non destinés à un usage commercial. Certaines pièces sont signées « Mister Andreas », pseudonyme artistique personnel.</p>
+    </div>
+  </section>
+
+  <section class="category" id="editions" data-accent="--accent-editions">
+    <div class="wrap">
+      <div class="cat-head reveal">
+        <div>
+          <p class="eyebrow"><span class="rule"></span>ED — Éditions</p>
+          <h2>Éditions</h2>
+        </div>
+        <span class="cat-tag">3 pièces</span>
+      </div>
+      <p class="cat-desc reveal">3 mises en page éditoriales — biographie illustrée, fiche parfum, fiche naturaliste.</p>
+      <div class="grid g-editions">
+        <figure class="card reveal" tabindex="0" role="button" data-cat="editions" data-src="assets/editions/editions-01.jpg" data-tag="ED · 01">
+          <img src="assets/editions/editions-01.jpg" alt="Double page éditoriale en rouge et orange sombres — biographie illustrée, texte en deux colonnes" loading="lazy">
+          <span class="tag">ED · 01</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+        <figure class="card reveal" tabindex="0" role="button" data-cat="editions" data-src="assets/editions/editions-02.jpg" data-tag="ED · 02">
+          <img src="assets/editions/editions-02.jpg" alt="Fiche parfum sur fond blanc — mise en page éditoriale, hiérarchie typographique fine" loading="lazy">
+          <span class="tag">ED · 02</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+        <figure class="card reveal" tabindex="0" role="button" data-cat="editions" data-src="assets/editions/editions-03.jpg" data-tag="ED · 03">
+          <img src="assets/editions/editions-03.jpg" alt="Fiche naturaliste sur fond blanc et orangé — huppe fasciée détourée, tableau de données et citation" loading="lazy">
+          <span class="tag">ED · 03</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+      </div>
+      <p class="legal">Amouage Decision : marque, slogan et informations olfactives cités à titre d'exercice éditorial personnel, non officiel, non affilié à la maison Amouage. Photographie du flacon : photo personnelle, retouchée avec assistance IA. Biographie d'Hirohiko Araki : exercice éditorial basé sur des informations publiques, non officiel.</p>
+    </div>
+  </section>
+
+  <section class="category" id="volume-branding" data-accent="--accent-vb">
+    <div class="wrap">
+      <div class="cat-head reveal">
+        <div>
+          <p class="eyebrow"><span class="rule"></span>VB — Volume &amp; Branding</p>
+          <h2>Volume &amp; Branding</h2>
+        </div>
+        <span class="cat-tag">6 pièces</span>
+      </div>
+      <p class="cat-desc reveal">6 déclinaisons — textile, packaging, papeterie.</p>
+      <div class="grid g-vb">
+        <figure class="card reveal" tabindex="0" role="button" data-cat="volume-branding" data-src="assets/volume-branding/volume-branding-01.jpg" data-tag="VB · 01">
+          <img src="assets/volume-branding/volume-branding-01.jpg" alt="Maillot de football rouge sombre, motif imprimé sur textile — mise en situation" loading="lazy">
+          <span class="tag">VB · 01</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+        <figure class="card reveal" tabindex="0" role="button" data-cat="volume-branding" data-src="assets/volume-branding/volume-branding-02.jpg" data-tag="VB · 02">
+          <img src="assets/volume-branding/volume-branding-02.jpg" alt="Maillot gris foncé à détails orange, vue de face sur textile" loading="lazy">
+          <span class="tag">VB · 02</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+        <figure class="card reveal" tabindex="0" role="button" data-cat="volume-branding" data-src="assets/volume-branding/volume-branding-03.jpg" data-tag="VB · 03">
+          <img src="assets/volume-branding/volume-branding-03.jpg" alt="Packaging noir et or, mise en volume sur fond sombre — déclinaison Galler" loading="lazy">
+          <span class="tag">VB · 03</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+        <figure class="card reveal" tabindex="0" role="button" data-cat="volume-branding" data-src="assets/volume-branding/volume-branding-04.jpg" data-tag="VB · 04">
+          <img src="assets/volume-branding/volume-branding-04.jpg" alt="Packaging jaune sur fond clair, étui imprimé en volume — déclinaison Galler" loading="lazy">
+          <span class="tag">VB · 04</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+        <figure class="card reveal" tabindex="0" role="button" data-cat="volume-branding" data-src="assets/volume-branding/volume-branding-05.jpg" data-tag="VB · 05">
+          <img src="assets/volume-branding/volume-branding-05.jpg" alt="Papeterie sur fond noir — carte de visite en situation, éclairage latéral" loading="lazy">
+          <span class="tag">VB · 05</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+        <figure class="card reveal" tabindex="0" role="button" data-cat="volume-branding" data-src="assets/volume-branding/volume-branding-06.jpg" data-tag="VB · 06">
+          <img src="assets/volume-branding/volume-branding-06.jpg" alt="Carte de visite DRION sur fond noir, recto-verso, marquage triangle rouge" loading="lazy">
+          <span class="tag">VB · 06</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+      </div>
+      <p class="legal">Maillots et packaging Galler : exercices scolaires, non commandés et non officiels. Textes de packaging fictifs (remplissage). Designs et motifs entièrement conçus par moi — mises en situation (fonds, lumière) générées avec assistance IA.</p>
+    </div>
+  </section>
+
+  <section class="category" id="artwork" data-accent="--accent-artwork">
+    <div class="wrap">
+      <div class="cat-head reveal">
+        <div>
+          <p class="eyebrow"><span class="rule"></span>AR — Artwork</p>
+          <h2>Artwork</h2>
+        </div>
+        <span class="cat-tag">2 pièces</span>
+      </div>
+      <p class="cat-desc reveal">2 pièces — rendu 3D et animation, issus d'un projet de jeu vidéo personnel.</p>
+      <div class="grid g-artwork">
+        <figure class="card reveal" tabindex="0" role="button" data-cat="artwork" data-src="assets/artwork/artwork-01.webp" data-tag="AR · 01">
+          <img src="assets/artwork/artwork-01.webp" alt="Rendu 3D clair aux accents cyan et orange — décor issu d'un projet de jeu vidéo personnel" loading="lazy">
+          <span class="tag">AR · 01</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+        <figure class="card reveal" tabindex="0" role="button" data-cat="artwork" data-src="assets/artwork/artwork-02.gif" data-tag="AR · 02">
+          <img src="assets/artwork/artwork-02.gif" alt="Animation en boucle sur fond noir, dominante violette — cycle issu d'un projet de jeu vidéo personnel" loading="lazy">
+          <span class="tag">AR · 02</span>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </figure>
+      </div>
+      <p class="legal">Rendu 3D et animation réalisés à titre d'exercice personnel. Enseignes et logos visibles dans le décor (dont Apple Store et KFC) reproduits à des fins d'entraînement, non commandés et non officiels.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-top">
+        <div>
+          <h3>Un projet en tête ?</h3>
+          <p>Logo, affiche, mise en page ou illustration — contactez-moi.</p>
+          <a class="foot-contact" href="mailto:&#100;&#114;&#105;&#111;&#110;&#46;&#98;&#120;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#100;&#114;&#105;&#111;&#110;&#46;&#98;&#120;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109; →</a>
+          <p class="legal legal-credential">Certifié en Infographie (CQ) — Adobe Creative Cloud (Illustrator, Photoshop, InDesign).</p>
+        </div>
+        <div class="foot-links">
+          <a href="#logos">Logos</a>
+          <a href="#affiches">Affiches</a>
+          <a href="#editions">Éditions</a>
+          <a href="#volume-branding">Volume &amp; Branding</a>
+          <a href="#artwork">Artwork</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>DRION — DESIGN GRAPHIQUE</span>
+        <span id="year"></span>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<div class="lightbox" id="lightbox"
+     role="dialog" aria-modal="true" aria-labelledby="lbTag" hidden>
+  <span class="lb-tag" id="lbTag"></span>
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Fermer (Échap)">✕</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Image précédente">←</button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Image suivante">→</button>
+</div>
+
+<script src="script.js?v=2"></script>
+</body>
+</html>

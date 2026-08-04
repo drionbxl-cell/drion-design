@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://drion-design.netlify.app/sitemap.xml
